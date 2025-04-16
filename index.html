@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
-    <header>
+    <header class="">
         <div class="relative min-vh-70 bg-black text white">
             <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
                 <source src="img/fullres (4).mp4" type="video/mp4" />
@@ -19,14 +19,15 @@
               <!-- Overlay (darkens the video) -->
               <div class="absolute inset-0 bg-black bg-opacity-65 z-10"></div>
 
-            <div class="relative z-10 flex items-center justify-between px-6 py-4 bg-black text-sm text-white">
+            <div class="lg:fixed sm:relative m:items-center sm:items-center w-full z-10 flex items-center justify-between px-6 py-4 bg-black text-sm text-white">
                 <img src="img/wander-logo.873cb23c.svg" alt="" class="">
-                <span>🎉 Limited-time offer. 15% off discount waiting for you at checkout (expires soon)</span>
-                <button class=" text-white px-4 py-1 rounded hover:bg-gray-200 hover:text-black border">
+                
+                <button class="hidden lg:block text-white px-4 py-1 rounded hover:bg-gray-200 hover:text-black border">
                     Unlock access and rewards <span class="text-gray-500">></span>
                 </button>
             </div>
-            <div class="relative z-10 flex items-center justify-between text-white flex-col gap-6 px-70">
+            <div class="relative pt-5 z-10 flex items-center justify-between text-white flex-col gap-6 px-70">
+              <span>🎉 Limited-time offer. 15% off discount waiting for you at checkout (expires soon)</span>
                 <strong class="font-extrabold text-5xl pt-4">Find your happy place</strong>
                 <p class="w-6/12 text-center">Book a Wander with inspiring views, hotel-grade amenities, dreamy beds, top-tier cleaning and 24/7 concierge service. It’s a vacation home, but better.</p>
                 <div class="flex ">
@@ -38,24 +39,27 @@
                         </p>
                 </div>
             </div>
-            <div class=" lg:relative lg:z-10 text-white flex-fill lg:ms-60 lg:mt-6 sm:hidden md:hidden  lg:flex">
-                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2">
+            <div class="z-10 lg:hidden mg:hidden sm:flex justify-center items-center gap-2 sm:relative">
+              <input class="w-80 h-8 bg-black border p-2 border-gray-600" type="text" placeholder="Where to go?"> 
+            </div>
+            <div class="  lg:z-10 text-white flex-fill lg:ms-60 lg:mt-6   lg:flex">
+                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2 lg:relative ">
                     <img src="img/1726975575-quality.avif" alt="" class="h-5 w-5">
                     <p class="">Wherever</p>
                 </div>
-                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2">
+                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2 lg:relative ">
                     <img src="img/1727207060-mountains-cloud-1.avif" alt="" class="h-5 w-5">
                     <p>Whoever</p>
                 </div>
-                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2">
+                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2 lg:relative ">
                     <img src="img/1726975319-concierge.avif" alt="" class="h-5 w-5">
                     <p>Whenever</p>
                 </div>
-                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2">
+                <div class="box flex justify-center items-center gap-2 bg-black h-8 border-gray-600 border p-2 lg:relative ">
                     <img src="img/1726975279-safety.avif" alt="" class="h-5 w-5">
                     <p>Filter</p>
                 </div>
-                <div class="box  flex justify-center items-center gap-2 ">
+                <div class="box  flex justify-center items-center gap-2 lg:relative">
                     <input class="w-80 h-8 bg-black border p-2 border-gray-600" type="text" placeholder="Search anything with Wonder AI">
                 </div>
             </div>
@@ -99,7 +103,7 @@
             </div>
         </div>
     </header>
-    <div class="bg-black text-white grid lg:grid-cols-3 md:grid-cols-2">
+    <div class="bg-black text-white grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-5">
         <div class="max-w-sm rounded-xl overflow-hidden shadow-lg bg-black text-white">
            
             <div class="relative group">
@@ -481,7 +485,7 @@
            
             <div class="relative group">
               <video
-                class="w-full h-64 object-cover transition-transform duration-300 transform group-hover:scale-105"
+                class="w-full p-6 md:p-2 lg:p-0 h-64 object-cover transition-transform duration-300 transform group-hover:scale-105"
                 muted
                 loop
                 preload="metadata"
@@ -730,19 +734,19 @@
 
     </div>
 
-    <div class="relative  ">
+    <div class="relative">
       <img src="img/c44a74f0553bcf43d178c64a65d52779.jpg" alt="" clas="inset-0 w-full h-64 absolute">
 
       
-      <div class="absolute top-36 text-white flex flex-col text-center px-56">
+      <div class="absolute lg:top-36 md:top-36 top-10 text-white flex flex-col text-center lg:px-56">
         <p class="text-gray-200">IT'S A VACATION HOME, BUT BETTER</p>
-        <h1 class="font-extrabold text-4xl mt-2 mb-2">The Wander difference</h1>
+        <h1 class="font-extrabold lg:text-4xl mt-2 mb-2">The Wander difference</h1>
         <h3 class="text-white">Wander is different because we combine the quality of a luxury hotel with the comfort of a private vacation home. Only the top 1% of vacation homes are available on Wander.</h3>
       </div>
     </div>
 
 
-    <div class="bg-black grid lg:grid-cols-2 sm:grid-cols-1 text-white gap-y-14 pb-32">
+    <div class="bg-black grid lg:grid-cols-2 sm:grid-cols-1 text-white gap-y-14 pb-32 p-12">
       <div class="flex flex-col gap-3  content-center w-2/3 ">
         <img class="h-10 w-10" src="img/1726975575-quality.avif" alt="" class="">
         <h1>Only the top 1% of homes</h1>
@@ -775,7 +779,7 @@
       </div>
     </div>
     
-    <footer class="bg-black text-white  flex flex-col lg:gap-40 p-8 lg:flex-row sm:gap-y-7">
+    <footer class="bg-black text-white  flex flex-col lg:gap-32 p-8 lg:flex-row sm:gap-y-7">
       <div class="flex flex-col gap-3 lg:me-64">
         <img class="w-48" src="img/wander-logo.873cb23c.svg" alt="">
         <h2>Find your happy place ®</h2>
@@ -783,28 +787,31 @@
         <img src="img/Screenshot 2025-04-16 111914.png" alt="" class="w-48 mt-12">
       </div>
       <div class="flex flex-col gap-3">
-        <h3>FOR GUESTS</h3>
+        <h3 class="text-gray-400 text-sm mb-3">FOR GUESTS</h3>
         <h4>Blog</h4>
         <h4>Press</h4>
         <h4>Privacy</h4>
         <h4>Terms</h4>
         <h4>Events</h4>
+        <h4>Contact</h4>
       </div>
       <div class="flex flex-col gap-3">
-        <h3>FOR GUESTS</h3>
-        <h4>Blog</h4>
-        <h4>Press</h4>
-        <h4>Privacy</h4>
-        <h4>Terms</h4>
-        <h4>Events</h4>
+        <h3 class="text-gray-400 text-sm mb-3">FOR PARTNERS</h3>
+        <h4>Wander Operated</h4>
+        <h4>Wander Branded</h4>
+        <h4>Own With Wander</h4>
+        <h4>Ambassadors</h4>
+        <h4>Travel Agents</h4>
+        <h4>Wander Store</h4>
       </div>
       <div class="flex flex-col gap-3">
-        <h3>FOR GUESTS</h3>
-        <h4>Blog</h4>
-        <h4>Press</h4>
-        <h4>Privacy</h4>
-        <h4>Terms</h4>
-        <h4>Events</h4>
+        <h3 class="text-gray-400 text-sm mb-3">FOR EVERYONE</h3>
+        <h4>About Wander</h4>
+        <h4>Customer reviews</h4>
+        <h4>Join the team</h4>
+        <h4>Our story</h4>
+        <h4>Licensing</h4>
+        <h4>See more</h4>
       </div>
 
     </footer>
